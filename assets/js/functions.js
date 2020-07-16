@@ -253,7 +253,6 @@ wow.init();
     1.2 < Math.abs(c) && (c *= options.stepSize / 120);
     1.2 < Math.abs(d) && (d *= options.stepSize / 120);
     scrollArray(b, -c, -d);
-    a.preventDefault()
   }
   var cache = {};
   setInterval(function () {
