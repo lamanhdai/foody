@@ -371,12 +371,21 @@
 			map = new google.maps.Map(document.getElementById("googleMaps"), options);
 			var marker = new google.maps.Marker({
 				position: dongqueLatLng,
-				map: map,
-				icon: "/images/logo.png"
-
+				title: "Đông Quê Bến Lức",
+				animation: google.maps.Animation.DROP,
+				map: map
 			});
-		}
 
+			var infowindow = new google.maps.InfoWindow({
+				content: "Đông Quê Bến Lức",
+				position: dongqueLatLng
+			});
+
+			infowindow.open(map, marker);
+			google.maps.event.addListener(marker, 'click', function() {
+                            infowindow.open(map, marker);
+                        });
+		}
 
 		jQuery(document).ready(function($) {
 			"use strict";
