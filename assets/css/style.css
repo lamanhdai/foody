@@ -2908,5 +2908,9 @@ h1 {
   background: #f93c11;
 }
 
+#our-crew .modal-header {
+	border-bottom: 0;
+}
+
 /* 24 - version 2 End
 ---------------------------------------------------------------------- */
