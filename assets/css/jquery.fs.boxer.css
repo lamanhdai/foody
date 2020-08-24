@@ -198,6 +198,7 @@
   width: auto;
 }
 #boxer .boxer-image {
+  min-width: 600px;
   float: left;
 }
 #boxer .boxer-video {

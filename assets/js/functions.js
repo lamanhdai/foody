@@ -97,7 +97,9 @@ jQuery(window).on('scroll', function (){
 
 
   /*-----------  Boxer Video and image Gallery  --------*/
-    $(".boxer").boxer({retina: true}); 
+    $(".boxer").boxer({
+      minWidth: 400
+    }); 
 
 
   /*------------------- Welcome  Slider  --------------*/
